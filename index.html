@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM 6500 SQL Learning Portfolio</title>
+    <style>
+        :root {
+            --cpp-green: #005030;
+            --cpp-gold: #FFB81C;
+            --eggshell: #F2EEE8;
+            --ink: #121212;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: var(--eggshell);
+            color: var(--ink);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+        }
+        body::before {
+            content: "";
+            display: block;
+            height: 10px;
+            background: var(--cpp-gold);
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: clamp(32px, 7vw, 80px) 24px;
+        }
+        header {
+            background: var(--cpp-green);
+            color: #fff;
+            border-bottom: 6px solid var(--cpp-gold);
+            padding: clamp(28px, 5vw, 52px);
+            border-radius: 12px 12px 0 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: clamp(2rem, 5vw, 3.25rem);
+            line-height: 1.15;
+        }
+        .portfolio-details { margin: 20px 0 0; }
+        .portfolio-details p { margin: 5px 0; }
+        .portfolio-details .description { margin-top: 16px; max-width: 60ch; }
+        .project-list {
+            display: grid;
+            gap: 14px;
+            padding: 28px;
+            background: #fff;
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 12px 30px rgba(0, 80, 48, .10);
+        }
+        .project-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 18px;
+            padding: 24px;
+            border: 2px solid var(--cpp-green);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--cpp-green);
+            transition: background-color .15s, transform .15s;
+        }
+        .project-list h2 { margin: 0 0 8px; color: var(--cpp-green); }
+        .project-card.pending { border-color: #c8d6cf; color: #465b50; background: #f8f8f6; }
+        .project-card.pending .project-info h3 { font-size: 1.12rem; }
+        .pending-label { font-size: .92rem; }
+        a.project-card:hover, a.project-card:focus-visible {
+            background: var(--eggshell);
+            transform: translateY(-2px);
+        }
+        a.project-card:focus-visible { outline: 3px solid var(--cpp-gold); outline-offset: 3px; }
+        .project-info h3 { margin: 0; font-size: 1.35rem; }
+        .view-btn {
+            flex-shrink: 0;
+            background: var(--cpp-gold);
+            color: var(--cpp-green);
+            padding: 10px 16px;
+            border-radius: 5px;
+            font-weight: 700;
+        }
+        @media (max-width: 540px) {
+            .project-card { align-items: flex-start; flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>IBM 6500 SQL Learning Portfolio</h1>
+            <div class="portfolio-details">
+                <p><strong>Student:</strong> Luis Berumen</p>
+                <p><strong>Course:</strong> IBM 6500</p>
+                <p class="description">This portfolio contains my DataCamp course-completion evidence and learning notes for SQL and BigQuery.</p>
+            </div>
+        </header>
+
+        <main class="project-list">
+            <h2>Reports</h2>
+            <a href="../ibm-6500-sql-learning-portfolio/introduction-to-sql/introduction-to-sql.html" class="project-card">
+                <div class="project-info">
+                    <h3>Introduction to SQL</h3>
+                </div>
+                <span class="view-btn">View Report</span>
+            </a>
+            <div class="project-card pending">
+                <div class="project-info"><h3>Introduction to BigQuery</h3></div>
+                <span class="pending-label">To be completed</span>
+            </div>
+            <div class="project-card pending">
+                <div class="project-info"><h3>Intermediate SQL</h3></div>
+                <span class="pending-label">To be completed</span>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
