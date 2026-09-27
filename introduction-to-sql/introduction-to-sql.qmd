@@ -71,4 +71,4 @@ The part I would need to practice most is deciding how to organize tables and ch
 ## Appendix: Publication Links
 
 - [GitHub Repository](https://github.com/Brahhmen55/ibm-6500-sql-learning-portfolio)
-- [Published Introduction to SQL Report](https://Brahhmen55/ibm-6500-sql-learning-portfolio/introduction-to-sql.html)
+- [Published Introduction to SQL Report](https://brahhmen55.github.io/ibm-6500-sql-learning-portfolio/introduction-to-sql/)
