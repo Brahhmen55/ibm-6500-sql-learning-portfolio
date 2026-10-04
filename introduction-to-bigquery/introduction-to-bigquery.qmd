@@ -1,7 +1,7 @@
 ---
 title: "Introduction to BigQuery: Course Completion and Learning Notes"
 author: "Luis Berumen"
-date: "2026-10-04"
+date: today
 format:
   html:
     toc: true
