@@ -205,4 +205,4 @@ I expect to revisit the filtering chapter for observation windows and missing va
 ## Appendix: Publication Links
 
 - [GitHub Repository](https://github.com/Brahhmen55/ibm-6500-sql-learning-portfolio)
-- [Published Introduction to BigQuery Report](https://brahhmen55.github.io/ibm-6500-sql-learning-portfolio/intermediate-sql/)
+- [Published Intermediate Sql Report](https://brahhmen55.github.io/ibm-6500-sql-learning-portfolio/intermediate-sql/)
